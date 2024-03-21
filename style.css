@@ -18,21 +18,38 @@ nav
     align-items: center;
     height: 100px;
     background-color: rgb(30, 30, 62);
-
+    
 }
 
  nav ul
 {
     display: flex;
     align-items: center;
-
 }
 
 nav ul li
 {
     list-style: none;
-    margin: 0 20px; /*23px*/
+    margin: 0 20px; 
 } 
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover
+{
+    color:rgb(88, 58, 115);
+    font-size: 1.05rem;
+}
+
+main hr {
+    height: 1px;
+    margin: 51px 20px;
+    border: 0;
+    background-color: #602e8e;
+}
 
 .left{
     font-size: 1.5rem;
@@ -40,23 +57,32 @@ nav ul li
 
 .firstSection{
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    margin:20px 0; /*23px*/
+    margin: 100px 0; /*23px*/
 }
 
-.firstSection div
+.firstSection > div
 {
-   
-    width: 30%;
+    
+    width: 45%;
 }
 
 .leftSection
 {
-    background-color: red;
+    margin: 50px 0;
+    font-size: 2.5rem;
+}
+
+.name{
+    color: rgb(107, 43, 172);
+}
+
+img{
+    width: 80%;
 }
 
 
-.rightSection
-{
-    background-color: red;
+#element{
+    color: blueviolet;
 }

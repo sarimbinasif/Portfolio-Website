@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Mitr:wght@200;300;400;500;600;700&display=swap" 
 rel="stylesheet">
+<script src="Portfolio-Website/index.js"></script>
     
 </head>
 <body>
@@ -17,10 +18,10 @@ rel="stylesheet">
             <div class="left">Sarim's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li><a href="/">Home </a></li>
+                    <li><a href="/">About </a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -28,10 +29,29 @@ rel="stylesheet">
 
     <main>
         <section class="firstSection">
-            <div class="leftSection">Hi, My name is sarim <</div>
-            <div class="rightSection">right</div>
+            <div class="leftSection">Hi, My name is <span class="name">Sarim</span> 
+            <div>and I am a passionate</div>
+            <div>web developer</div>
+            <span id="element"></span>
+            
+            </div>
+            <div class="rightSection">
+                <img src="background-img.png" alt="background image">
+            </div>
 
         </section>
+
+        <section class="secondSection">
+            <hr class="">
+            <h1>Education</h1>
+        </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['<i>Front end </i> developer.', 'problem solver.'],
+          typeSpeed: 50,
+        });
+      </script>
 </body>
 </html>
