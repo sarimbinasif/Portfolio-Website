@@ -46,7 +46,7 @@ nav ul li a:hover
 
 main hr {
     height: 1px;
-    margin: 51px 20px;
+    margin: 51px -5px; /*20 px*/
     border: 0;
     background-color: #602e8e;
 }
@@ -64,7 +64,6 @@ main hr {
 
 .firstSection > div
 {
-    
     width: 45%;
 }
 
@@ -82,7 +81,37 @@ img{
     width: 80%;
 }
 
+.text-grey{
+    color: rgb(118, 113, 123);
+}
 
 #element{
     color: blueviolet;
+}
+.secondSection{
+    max-width: 100vw;
+    margin: 30px;
+    height: 80vh; 
+}
+
+.secondSection h1{
+    font-size: 2rem;
+}
+
+.secondSection .education-box{
+    display: flex;
+    background-color: white;
+    width: 100vh; /*increase this to get width*/
+    height: 1px;
+    margin: 20px 10px;
+}
+
+.secondSection .vertical-box{
+    height: 40vh;
+    width: 1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: white;
 }
