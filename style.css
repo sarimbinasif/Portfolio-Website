@@ -1,74 +1,85 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
-
-}
-body
-{
-    background-color: rgb(25, 25, 38); /* 0, 0, 33*/
-    color: aliceblue; /*white*/
-    font-family: Mitr, sans-serif; /*poppins*/
 }
 
-nav
-{
+body {
+    background-color: rgb(25, 25, 38);
+    color: aliceblue;
+    font-family: Mitr, sans-serif;
+}
+
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100px;
-    background-color: rgb(30, 30, 62);
-    
 }
 
- nav ul
-{
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+nav ul {
     display: flex;
     align-items: center;
+    padding: 0;
 }
 
-nav ul li
-{
+nav ul li {
     list-style: none;
-    margin: 0 20px; 
-} 
+    margin: 0 20px;
+}
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: white;
+    transition: color 0.3s;
 }
 
-nav ul li a:hover
-{
-    color:rgb(88, 58, 115);
+nav ul li a:hover {
+    color: rgb(88, 58, 115);
     font-size: 1.05rem;
 }
 
 main hr {
     height: 1px;
-    margin: 51px -5px; /*20 px*/
+    margin: 51px -5px 20px;
     border: 0;
     background-color: #602e8e;
 }
 
-.left{
+.left {
     font-size: 1.5rem;
 }
 
-.firstSection{
+.firstSection {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    margin: 100px 0; /*23px*/
+    margin: 100px 0;
 }
 
-.firstSection > div
-{
+.firstSection > div {
     width: 45%;
 }
 
-.leftSection
-{
+.leftSection {
     margin: 50px 0;
     font-size: 2.5rem;
 }
@@ -82,49 +93,74 @@ main hr {
     background-color: #5b5b99;
     padding: 8px;
     margin: 6px;
-    transition: background-color 0.3s, border-color 0.3s; 
+    transition: background-color 0.3s, border-color 0.3s;
     text-decoration: none;
 }
 
 .leftSection .btn:hover {
-    background-color: #22225d; 
+    background-color: #22225d;
 }
 
-
-.name{
+.name {
     color: rgb(107, 43, 172);
 }
 
-img{
-    width: 80%;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-.text-grey{
+.text-grey {
     color: rgb(118, 113, 123);
 }
 
-#element{
+#element {
     color: blueviolet;
 }
-.secondSection{
-    max-width: 100vw;
-    margin: 30px;
-    height: 80vh; 
+
+@media (max-width: 768px) {
+    .firstSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .firstSection > div {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .leftSection {
+        margin: 20px 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .leftSection .btn {
+        font-size: 16px;
+        width: 80%;
+        margin: 10px auto;
+    }
 }
 
-.secondSection h1{
+.secondSection {
+    max-width: 100vw;
+    margin: 30px;
+    height: 80vh;
+}
+
+.secondSection h1 {
     font-size: 2rem;
 }
 
-.secondSection .education-box{
+.secondSection .education-box {
     display: flex;
     background-color: white;
-    width: 160vh; /*increase this to get width*/
+    width: 160vh;
     height: 1px;
     margin: 40px 35px;
 }
 
-.secondSection .vertical-box{
+.secondSection .vertical-box {
     height: 40vh;
     width: 1px;
     margin-top: 0px;
@@ -134,23 +170,20 @@ img{
     background-color: white;
 }
 
-.img-top{
+.img-top {
     position: relative;
-    /* border: 1px solid rgb(108, 26, 167); */
     width: 40px;
     height: 24px;
     top: -32px;
-    /* left: 0px; */
 }
 
-.vertical-title
-{
+.vertical-title {
     width: 150px;
     margin-left: 10px;
     color: gray;
 }
-.vertical-description
-{
+
+.vertical-description {
     position: relative;
     color: gray;
     margin-left: 10px;
@@ -159,19 +192,13 @@ img{
     width: 150px;
 }
 
- .ThirdSection{  /* footer*/
-    /* display: flex; */
+.ThirdSection {
     background-color: #181031;
-    height: 200px;
-    margin-top: 100px;
-    padding-top: 40px;
-    padding-left: 35px;
-} 
+    padding: 40px 20px;
+    text-align: center;
+}
 
-.progress{
+.progress {
     margin-top: 10px;
-    padding: auto;
-    margin-left: 20px;
-    margin-right: 20px;
-   background-color: #342740;
+    background-color: #342740;
 }
