@@ -73,6 +73,24 @@ main hr {
     font-size: 2.5rem;
 }
 
+.leftSection .btn {
+    border: 1px solid white;
+    font-size: 20px;
+    color: white;
+    border-radius: 3px;
+    height: 40px;
+    background-color: #5b5b99;
+    padding: 8px;
+    margin: 6px;
+    transition: background-color 0.3s, border-color 0.3s; 
+    text-decoration: none;
+}
+
+.leftSection .btn:hover {
+    background-color: #22225d; 
+}
+
+
 .name{
     color: rgb(107, 43, 172);
 }
@@ -101,9 +119,9 @@ img{
 .secondSection .education-box{
     display: flex;
     background-color: white;
-    width: 100vh; /*increase this to get width*/
+    width: 160vh; /*increase this to get width*/
     height: 1px;
-    margin: 20px 10px;
+    margin: 40px 35px;
 }
 
 .secondSection .vertical-box{
@@ -111,7 +129,41 @@ img{
     width: 1px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 100px;
+    margin-right: 140px;
     background-color: white;
+}
+
+.img-top{
+    position: relative;
+    /* border: 1px solid rgb(108, 26, 167); */
+    width: 40px;
+    height: 24px;
+    top: -32px;
+    /* left: 0px; */
+}
+
+.vertical-title
+{
+    width: 150px;
+    margin-left: 10px;
+    color: gray;
+}
+.vertical-description
+{
+    position: relative;
+    color: gray;
+    margin-left: 10px;
+    font-size: 0.7rem;
+    margin-top: 20px;
+    width: 150px;
+}
+
+.footer{
+    display: flex;
+    background-color: #181031;
+    height: 200px;
+    margin-top: 100px;
+    padding-top: 40px;
+    padding-left: 35px;
 }
